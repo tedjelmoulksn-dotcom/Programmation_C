@@ -32,7 +32,9 @@ For investigation, add AddressSanitizer/UndefinedBehaviorSanitizer flags if supp
 
 ## Source review
 
-The archive preserves educational implementations:
+The key review criterion is object lifetime: every allocation needs one owner, every returned buffer needs a release policy, and every fixed-size field needs an input bound. Compiler diagnostics and memory instrumentation make these relationships inspectable during execution.
+
+The exercises expose several important C design decisions:
 
 - `strcpy` into fixed buffers needs an explicit input-length bound.
 - Object and formatted-string allocations need checked failures and matching `free` calls.
@@ -40,7 +42,7 @@ The archive preserves educational implementations:
 - The CSV exercise contains incompatible pointer types and an incomplete record-reading path; review it before using it with real data.
 - The student-record exercise writes a `database.csv` file in its working directory.
 
-These issues are documented rather than silently represented as production-quality behaviour. No source changes or compiler runs were performed as part of this README update.
+The learning value is in tracing these operations from the data model to memory accesses, then defining explicit ownership and bounds at each interface.
 
 ## Licence
 
