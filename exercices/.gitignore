@@ -1,0 +1,23 @@
+# Binaires et objets
+*.o
+*.obj
+*.exe
+*.out
+a.out
+
+# Visual Studio
+.vs/
+Debug/
+Release/
+x64/
+*.vcxproj.user
+*.suo
+*.pdb
+*.ilk
+
+# Fichier genere par tp2_fiches_etudiants_csv.c
+database.csv
+
+# Editeurs
+*~
+.vscode/
