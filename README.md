@@ -1,6 +1,10 @@
 # C Programming — Memory, Data Structures and File I/O
 
-A collection of C exercises focused on arrays, pointer-based structures, heap allocation, function pointers and text-file processing. The emphasis is on the language mechanisms underlying application behaviour.
+C exercises in pointers, heap allocation, function pointers and CSV file processing.
+
+![Two independent implementation paths.](assets/project-overview.svg)
+
+*Two independent implementation paths.*
 
 ## Modules
 
