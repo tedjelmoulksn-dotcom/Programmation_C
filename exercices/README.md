@@ -28,4 +28,4 @@ The archived CSV exercise contains incompatible pointer declarations and an inco
 
 ## Validation and licence
 
-No source changes or compiler runs were performed for this documentation update. No project-wide licence has been defined.
+Compiler diagnostics are the first check of declarations and conversions; runtime inspection then addresses buffer bounds and file-processing behaviour. No project-wide licence has been defined.
