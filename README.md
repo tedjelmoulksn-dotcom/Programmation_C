@@ -8,6 +8,10 @@ Programmes en langage C réalisés pendant la formation.
 | [`exercices/`](exercices/) | Exercices : tableaux, structures, fichiers, listes chaînées |
 | [`structure_porte/`](structure_porte/) | `porte.c` : structure `Porte` manipulée par des fonctions de création, d'ouverture, de peinture et de comparaison, avec un pointeur de fonction pour l'affichage |
 
+![Programmation C project overview](assets/project-overview.svg)
+
+*Overview of independent C exercises involving structures, ownership and file handling.*
+
 ## Compilation (exemple)
 ```bash
 gcc structure_porte/porte.c -o porte && ./porte
