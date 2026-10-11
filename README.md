@@ -1,12 +1,19 @@
-# Programmation C
+# C Programming Exercises
 
-Programmes en langage C réalisés pendant la formation.
+Course exercises covering arrays, statistics, structures, pointers, CSV files and linked lists. Original stock-management development projects are retained as historical material.
 
-| Dossier | Contenu |
+## Repository guide
+
+| Location | Contents |
 |---|---|
-| [`gestion_stock/`](gestion_stock/) | Application de gestion de stock : listes chaînées, lecture/écriture de fichiers CSV, découpage en modules `.h/.c` |
-| [`exercices/`](exercices/) | Exercices : tableaux, structures, fichiers, listes chaînées |
-| [`structure_porte/`](structure_porte/) | `porte.c` : structure `Porte` manipulée par des fonctions de création, d'ouverture, de peinture et de comparaison, avec un pointeur de fonction pour l'affichage |
+| [exercices/](exercices/) | Organised examples and record/list exercises |
+| [structure_porte/](structure_porte/) | Structure manipulation and function-pointer example |
+| [docs/](docs/) | C reference material and pointer notes |
+| [archive/](archive/) | Original Visual Studio projects and development fragments |
+
+## Getting started
+
+A standalone example can be built with:
 
 ![Programmation C project overview](assets/project-overview.svg)
 
@@ -14,11 +21,12 @@ Programmes en langage C réalisés pendant la formation.
 
 ## Compilation (exemple)
 ```bash
-gcc structure_porte/porte.c -o porte && ./porte
+gcc structure_porte/porte.c -o porte
+./porte
 ```
-Les autres dossiers indiquent leur commande de compilation dans leur README.
 
-## Compétences
-C structuré, allocation dynamique, listes chaînées, fichiers, pointeurs de fonction.
+Multi-file exercises must be compiled with their companion `.c` files and local headers.
 
-Aucune licence n'a été définie.
+## Project context
+
+The main inventory application has its own repository: [Gestion-du-stock-en-C](https://github.com/tedjelmoulksn-dotcom/Gestion-du-stock-en-C). Historical variants here preserve their original file layout.
