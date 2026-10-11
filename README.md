@@ -15,6 +15,11 @@ Course exercises covering arrays, statistics, structures, pointers, CSV files an
 
 A standalone example can be built with:
 
+![Programmation C project overview](assets/project-overview.svg)
+
+*Overview of independent C exercises involving structures, ownership and file handling.*
+
+## Compilation (exemple)
 ```bash
 gcc structure_porte/porte.c -o porte
 ./porte
